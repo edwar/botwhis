@@ -1,4 +1,4 @@
-### CHATBOT Whatsapp (Baileys Provider)
+### BOTWHIS Whatsapp (Baileys Provider)
 
 <p align="center">
   <img width="300" src="https://i.imgur.com/Oauef6t.png">
@@ -9,8 +9,8 @@
 
 
 ```
-npm install
-npm start
+bun install
+bun dev
 ```
 
 ---
