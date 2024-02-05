@@ -29,6 +29,14 @@ const initServer = (botInstance:any) => {
         fileStream.pipe(res);
       });
 
+    app.get("/qr", async (req, res) => {
+        const PATH_QR = join(process.cwd(), 'bot.qr.png');
+        const fileStream = createReadStream(PATH_QR);
+
+        res.writeHead(200, {"Content-Type": "image/png"});
+        fileStream.pipe(res)
+    })
+
 
     app.listen(PORT, () => {
         console.log(`http://locahost:${PORT} listo!`)
